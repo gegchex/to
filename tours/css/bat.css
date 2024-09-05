@@ -1,0 +1,174 @@
+.gallery {
+    --d: 30s;
+    /* duration */
+    display: grid;
+    overflow: hidden;
+    font-size: 28px;
+    width: 380px;
+    -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+  }
+  div .container{
+    position: relative;
+  }
+  .gallery > img {
+    grid-area: 1/1;
+    width: 100%;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    animation: r var(--d) linear infinite;
+  }
+  
+  .gallery > img:nth-child(2) {
+    animation-delay: calc(-0.2*var(--d));
+  }
+  
+  .gallery > img:nth-child(3) {
+    animation-delay: calc(-0.4*var(--d));
+  }
+  
+  .gallery > img:nth-child(4) {
+    animation-delay: calc(-0.6*var(--d));
+  }
+  
+  .gallery > img:nth-child(5) {
+    animation-delay: calc(-0.8*var(--d));
+  }
+  
+  @keyframes r {
+    80% {
+      transform: translate(-400%);
+    }
+    80.01% {
+      transform: translate(100%);
+    }
+  }
+.list-tour li{
+margin: 10px;
+position: relative;
+
+}
+
+
+
+.tour-grid{
+    display: flex;
+    margin-top: 100px;
+   
+}
+.tour-grid p{
+    font-size: 20px;
+}
+.tour-grid2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+   
+}
+.general{
+    width: 70%;margin-left: 250px;
+    
+    text-align: center;
+}
+.slide-img{
+    width: 100%;
+}
+
+
+
+/* hover hiden */
+.hidden-element {
+    visibility: hidden;
+    opacity: 0;
+    width: 80%;
+   margin-left: 200px;
+    z-index: 7;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 50px;
+    
+   
+    
+   
+    transition: 
+    
+        visibility 0s, opacity 0.5s ease;
+}
+
+.hidden-element p{
+    font-weight: bolder;
+    
+}
+li.parent-element{position: relative;}
+
+
+.parent-element:hover 
+.hidden-element {
+    color: green;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* hide-bottom */
+.hidden-element-bottom {
+    visibility: hidden;
+    opacity: 0;
+    width: 80%;
+   margin-left: 200px;
+    z-index: 7;
+    z-index: 1;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 50px;
+    
+   
+    
+   
+    transition: 
+    
+        visibility 0s, opacity 0.5s ease;
+}
+.parent-element:hover 
+.hidden-element-bottom {
+    color: green;
+    visibility: visible;
+    opacity: 1;
+}
+.hidden-element-bottom p{
+    font-weight: bolder;
+}
+
+/* .hidden-element-bottom-left */
+.hidden-element-bottom-left {
+    visibility: hidden;
+    opacity: 0;
+    width: 80%;
+   margin-left: 200px;
+    z-index:7 ;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 50px;
+    
+   
+    
+   
+    transition: 
+    
+        visibility 0s, opacity 0.5s ease;
+}
+.parent-element:hover 
+.hidden-element-bottom-left {
+    color: green;
+    visibility: visible;
+    opacity: 1;
+}
+.hidden-element-bottom-left p{
+    font-weight: bolder;
+}

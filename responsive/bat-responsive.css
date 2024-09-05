@@ -1,0 +1,90 @@
+@media( max-width:991px){
+    .tour-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin: 40px;
+        align-items: center;
+        position: relative;
+    }
+    .tour-grid2{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin: 40px;
+        align-items: center;
+    }
+    .general{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .slide-img{
+        width: 100%;
+        
+    }
+    .list-tour{
+        margin-top: 100px;
+    }
+    .frame-response{
+        margin-top: 100px;
+    }
+}
+@media( max-width:1199px){
+    .tour-grid{
+      
+        position: relative;
+    }
+    .tour-grid2{
+      position: relative;
+    }
+   
+     li.parent-element{
+        position: relative;
+        
+     }
+     .hidden-element
+     {
+        margin-left: 200px;
+        z-index: 1;
+     }
+     .hidden-element p{
+        position: absolute;
+     }
+}
+@media(max-width:630px){
+    .tour-grid{
+      
+        position: relative;
+    }
+    .tour-grid2{
+      position: relative;
+    }
+   
+     li.parent-element{
+        position: relative;
+        
+     }
+     .hidden-element
+     {
+        margin-left:50px;
+        z-index: 7;
+     }
+     .hidden-element p{
+        position: absolute;
+     }
+     .hidden-element-bottom-left{
+        margin-left:50px;
+        z-index: 7;
+
+     }
+     .hidden-element-bottom{
+        margin-left:50px;
+        z-index: 7;
+     }
+     iframe{
+        width:100% ;
+        height: 300px;
+     }
+
+}
